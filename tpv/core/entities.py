@@ -259,7 +259,7 @@ class Entity(BaseModel):
     max_gpus: Annotated[Optional[Union[int, float, str]], TPVFieldMetadata()] = None
     env: Annotated[Optional[List[Dict[str, str]]], TPVFieldMetadata(complex_property=True)] = None
     params: Annotated[Optional[Dict[str, Any]], TPVFieldMetadata(complex_property=True)] = None
-    resubmit: Annotated[Dict[str, str], TPVFieldMetadata(complex_property=True)] = Field(default_factory=lambda: dict())
+    resubmit: Annotated[Dict[str, Any], TPVFieldMetadata(complex_property=True)] = Field(default_factory=lambda: dict())
     rank: Annotated[Optional[str], TPVFieldMetadata(return_type="List[Destination]")] = None
     context: Optional[Dict[str, Any]] = Field(default_factory=lambda: dict())
     # evaluator is always assigned, so ignore the warning about default being None

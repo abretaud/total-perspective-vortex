@@ -126,7 +126,7 @@ will reveal the code that was type checked, and you can find the line numbers pi
   min_accepted_gpus: Optional[int]
   env: Optional[List[Dict[str, str]]]
   params: Optional[Dict[str, Any]]
-  resubmit: Optional[Dict[str, str]]
+  resubmit: Optional[Dict[str, Any]]
   rank: Optional[str]
   context: Optional[Dict[str, Any]]
   handler_tags: Optional[SchedulingTags]
